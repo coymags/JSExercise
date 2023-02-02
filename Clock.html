@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script src="clockJS.js" defer></script>
+    <style>
+        #clockcontainer{
+            width: 100%;
+            height: 20rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #clockcircle{
+            border: 1px solid black;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+        #currentdate{
+            display: flex;
+            flex-direction: row;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="clockcontainer">
+        <div id="clockcircle">
+            <div id="currentdate">
+                <p id="monthname"></p>
+            </div>
+            <div id="currenttime">
+                <p id="time"></p>
+            </div>
+            <div id="currentday">
+                <p id="day"></p>  
+            </div>          
+        </div>
+
+    </div>
+    
+</body>
+</html>
